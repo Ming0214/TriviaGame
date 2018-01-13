@@ -21,7 +21,6 @@ function splashScreen() {
 splashScreen();
 
 $(".startButton").on("click", function(event) {
-	event.preventDefault();
 	Ques();
 	Time();
 })
@@ -44,7 +43,12 @@ function Time() {
 }
 
 function Ques() {
-	questions = "<h2>Time Remaining: <span class='timeConter'>30</span></h2><h2>" + quesOptions[queCounter] + "</h2><h2 class='answer'>A. " + ansOptions[queCounter][0] + "</h2><h2 class='answer'>B. " + ansOptions[queCounter][1] + "</h2><h2 class='answer'>C. " + ansOptions[queCounter][2] + "</h2><h2 class='answer'>D. " + ansOptions[queCounter][3] + "</h2>";
+	questions = "<h2>Time Remaining: <span class='timeConter'>30</span></h2>" +
+	            "<h2>" + quesOptions[queCounter] + "</h2>" +
+	            "<h2 class='answer'>A. " + ansOptions[queCounter][0] + "</h2>" +
+	            "<h2 class='answer'>B. " + ansOptions[queCounter][1] + "</h2>" +
+	            "<h2 class='answer'>C. " + ansOptions[queCounter][2] + "</h2>" +
+	            "<h2 class='answer'>D. " + ansOptions[queCounter][3] + "</h2>";
    
     $("#game").html(questions);
 }
@@ -65,12 +69,19 @@ function click() {
 		Time();
 	}
 	else {
-		gameInfo = "<h3>win: </h3>"+ wins +" <h3>loss: </h3>" +losses+" <h3 class='text-center reset-button-container'><a class='btn btn-primary btn-lg btn-block reset-button' href='#' role='button'>Restart game!</a></h3>";
+		gameInfo = " <h3>win: </h3>"+ wins +
+		           " <h3>loss: </h3>" +losses+
+		           " <h3><a class='btn btn-primary btn-lg btn-block reset-button' href='#' role='button'>Restart game!</a></h3>";
 		$("#game").html(gameInfo);
+		$(".reset-button").on("click", function(event) {
+			Ques();
+			Time();
+		})
 	};
 	})
-	
 }
+
+
 
 function countLoss() {
     losses++;
