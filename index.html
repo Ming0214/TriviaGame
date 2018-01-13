@@ -2,127 +2,39 @@
 <html>
 <head>
 	<title>Trivial Game</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-	<div id="wrapper">
-		<h1>Totally Trivial Trivia!</h1>
-		<h2 class="questions">Time Remaining: <span id="time"></span> Seconds</h2>
-		<br>
 
-		<div class="questions" id="q1">
-			<h2>placeHolder1</h2>
-			<p>
-				<span id="one">
-					<button></button>
-				</span>  oneoneoneoneone 
-				<span id="two">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  twotwotwotwo 
-				<span id="three">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  threethreethree 
-				<span id="four">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  fourfour
-			</p>
-		</div>
-		<br>
+	<div class="jumbotron">
+		<div class="container">
+ 			<h1>Totally Trivial Trivia!</h1>
+<!-- 
+			<button class="btn">START</button> -->
 
-		<div class="questions" id="q2">
-			<h2>placeHolder2</h2>
-			<p>
-				<span id="one">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  oneoneoneoneone 
-				<span id="two">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  twotwotwotwo 
-				<span id="three">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  threethreethree 
-				<span id="four">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  fourfour
-			</p>
-		</div>
-		<br>
-
-		<div class="questions" id="q3">
-			<h2>placeHolder3</h2>
-			<p>
-				<span id="one">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  oneoneoneoneone 
-				<span id="two">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  twotwotwotwo 
-				<span id="three">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  threethreethree 
-				<span id="four">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  fourfour
-			</p>
-		</div>
-		<br>
-
-		<div class="questions" id="q4">
-			<h2>placeHolder4</h2>
-			<p>
-				<span id="one">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  oneoneoneoneone 
-				<span id="two">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  twotwotwotwo 
-				<span id="three">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  threethreethree 
-				<span id="four">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  fourfour
-			</p>
-		</div>
-		<br>
-
-		<div class="questions" id="q5">
-			<h2>placeHolder5</h2>
-			<p>
-				<span id="one">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  oneoneoneoneone 
-				<span id="two">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  twotwotwotwo 
-				<span id="three">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  threethreethree 
-				<span id="four">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  fourfour
-			</p>
-		</div>
-		<br>
-
-		<div class="questions" id="q6">
-			<h2>placeHolder6</h2>
-			<p>
-				<span id="one">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  oneoneoneoneone 
-				<span id="two">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  twotwotwotwo 
-				<span id="three">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  threethreethree 
-				<span id="four">
-					<input type="image" src="assets/images/finger.png" alt="#" width="15" height="15">
-				</span>  fourfour
-			</p>
+			<div id="game"></div>
+<!-- 			<button class="button1"></button>
+			<button class="button2"></button>
+			<button class="button3"></button>
+			<button class="button4"></button> -->
 		</div>
 	</div>
+<!-- 
+	<div class="jumbotron">
+		<div class="container">
+			<h2 class="questions"></h2>
 
+			<ul>
+				<li><button class="Ans1"></button></li>
+				<li><button class="Ans2"></button></li>
+				<li><button class="Ans3"></button></li>
+				<li><button class="Ans4"></button></li>
+			</ul>
+		</div>
+	</div>
+	 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>

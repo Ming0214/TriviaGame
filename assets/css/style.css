@@ -2,29 +2,18 @@
 	box-sizing: border-box;
 }
 
-#wrapper {
-	width: 60%;
-	position: absolute;
-	left: 20%;
-	right: 20%;
-	padding: 30px;
-	text-align: center;
-	background-color: yellow;
-
-}
-
 body {
-	background-color: black;
-	background-image: url("../images/#####");
+	text-align: center;
 }
 
-h2 {
-	margin-left: 20px;
-	margin-right: 20px;
-    word-wrap: break-word;
+.jumbotron {
+	width: 70%;
+	margin-left: 15%;
 }
 
-button: hover{
-	height: 50px;
-	width: 50px;
+.btn {
+	height: 60px;
+    width: 150px;
+    font-size: 150%;
+    margin-top: 150px;
 }
